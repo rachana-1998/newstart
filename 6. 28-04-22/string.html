@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>string function</title>
+    </head>
+    <body>
+         <script>
+             const answer1="first string";
+             const answer2='second string'
+            let len =answer1.length;
+            // Escape characters
+            // if I want to  have a ' ' or " " \ in my string, I should escape it by using \
+            // i.e. use \'string\' instead of 'string', use \"string\" instead of "string"
+            // use 1\\2 instead of 1\2
+            let text= " we are the \"student\" of accio job batch 12";
+           console.log(text)
+           let x = "john" // string ae primitive are default
+           console.log(typeof(x));
+            let y= new String("john")
+            console.log(typeof(y))
+            let z=new String("john")
+            //console.log(x==y)
+            console.log(y==z)
+            console.log(y===z)
+           // const obj1={a:"1",b:5},
+           // const obj2=obj1;
+           ///obj1===obj2//true, pointing to the same object
+           // const obj3={a:"1",b:5};
+           //obj1===obj3// false, pointing to the same looking object
+           let str="Rohan, Banana, Dutt"
+           let part=str.slice(7,13)//output banana
+          // console.log(part)
+           str=" Apple,Banana,kiwi";
+           part=str.slice(-12,-6)// strat counting from rigth side  and start with -1;
+          // console.log(part)
+           part=str.slice(7)//Banana, Kiwi
+           //console.log(part);
+
+           part=str.slice(-12)// Banana,Kiwi
+         //  console.log(part);
+          part=str.substring(7,13)
+         // console.log(part);
+           part=str.substring(-7)// invailid argument
+           console.log(part);
+           part=str.substr(7,6)//Banana
+           console.log(part)//it will print total 6th length starting from 7th index
+           part=str.substr(7)
+           console.log(part)
+           part=str.substr(-4)// position counts from the end of the string
+console.log(part)
+         </script>
+    </body>
+</html>
