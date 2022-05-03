@@ -23,3 +23,8 @@
 -substr(start,length)
 ### Difference between slice and substring is substring does not accept negative values
 - substr(start,length) => Similar to slice , but substr's second argument is the length
+### String Methods cont.
+-replace
+-replace ()Methode does not  change the string it is  called on
+-replace() method return a new string 
+- replace() method only replace the first match
