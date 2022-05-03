@@ -10,3 +10,62 @@ function toCelcius(fahrenheit){
 }
 let x=toCelcius(99)
 document.write("the temperature is"+x+"deg celcius")
+
+
+
+//const car="flat";
+//const car=["Mahindra","xuv300"];
+const car={
+    company: "Mahindra",model:"xuv 300"
+}
+console.log(car);
+console.log(car.company);
+console.log(car["company"]);
+
+
+const person={
+    FirstName:"rachana",
+    LastName:"pandey",
+    age:24,
+    fullname: function(){
+        return this.FirstName+" "+this.LastName
+    }
+
+}
+console.log(person)
+//printing a function
+console.log(person.fullname)
+//calling a function
+console.log(person.fullname());
+if(condition){
+
+}
+if(condition){
+
+}
+else{
+
+}
+if(condition){
+
+}
+else if(condition){
+
+}
+else{
+
+
+}
+switch(expression){
+    case x:
+        //code block
+        break;
+    case y:
+        //code block
+        break;
+    case z:
+            //code bock
+        break;
+    default:
+            //code block
+}
