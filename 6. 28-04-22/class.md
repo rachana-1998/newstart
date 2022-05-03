@@ -28,3 +28,13 @@
 -replace ()Methode does not  change the string it is  called on
 -replace() method return a new string 
 - replace() method only replace the first match
+-toUpperCase()
+-toLowerCase()
+-concat()
+-trim()
+-String Padding
+-padStart()
+-padEnd()
+-charAt()
+- All string methods return a new string, they don't modify the original string.
+- String are immutable : String cannot be changed , only replaced
