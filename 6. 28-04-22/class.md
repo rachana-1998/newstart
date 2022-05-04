@@ -38,3 +38,10 @@
 -charAt()
 - All string methods return a new string, they don't modify the original string.
 - String are immutable : String cannot be changed , only replaced
+# templates literal
+### Number method
+-topstring()
+-toExponential
+-toFixed() =>how many digits after decimal
+-toPrecision(n)=> return a string with a number written with specified length(n)
+-Number()=>converts JS variable to number, return NaN can not be convert

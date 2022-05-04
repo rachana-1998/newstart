@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Array</title>
+    </head>
+    <body>
+        <p id="show">
+
+        </p>
+<script>
+    const cars=["Mahindra","Volvo","Bmw"];
+    const cars1=[]
+    cars1[0]="Mahindra"
+    cars1[1]="Volvo"
+    cars1[2]="Bmw"
+    let car=cars[0]
+
+document.getElementById("show").innerHTML=cars
+console.log(typeof(cars))
+const weirdArr=["Mahindra",24,true,{firstname:"rachana",age:22}]
+console.log(weirdArr)
+let text=" "
+for(let i=0;i<cars.length;i++){
+    text+=cars[i]+"<br>"
+}
+document.getElementById("show").innerHTML=text
+const person={
+    firstname:"rachana",
+    lastname:"pandey",
+    age:22
+}
+for(let x in person){
+    console.log(x,person[x])
+
+}
+const numbers=[3,5,8,9,1,8,2];
+let txt=""
+numbers.forEach(myFunc)
+function myFunc(value,index,array){
+    if(index>0){
+    const newval=value+array[index-1]
+     txt=newval+","
+    }
+}
+console.log(txt)
+
+//while(condition){
+
+//}
+//do{
+
+//}while(condition)
+const  fruits=["Banana","Papaya","Apple"]
+fruits.push("kiwi")
+console.log(fruits)
+fruits[8]="Orange"
+console.log(fruits)
+// if you give a high indexes, it creats hole in array
+//fruit="dalhi"//illegal
+
+
+// difference between Array and Objects
+//Arrays are special kind of objects
+// objects use named indexes where as arrays use numbered indexes
+
+const point=new Array(1,2,3,4)
+const point2=[]
+const a1=new Array(40,100,1)
+console.log(a1)
+const a2=new Array(40,100)// creat a array with 2 element
+console.log(a2)
+const a3= new Array(40)//creat with 40 un defined element
+console.log(a3)
+
+
+
+console.log(fruits.toString())
+console.log(fruits.join("+"))
+console.log(fruits.pop())
+console.log(fruits.pop())
+console.log(fruits)
+console.log(fruits.shift())
+console.log(fruits)
+console.log(fruits.unshift("new-shift"))
+console.log(fruits)
+delete fruits[2]//leave holes in the Array,use pop or shift instead
+const arr1=["a","b"]
+const arr2=["z","y"]
+const arr12=arr1.concat(arr2,arr1,arr1)
+console.log(arr12)
+</script>
+
+    </body>
+</html>

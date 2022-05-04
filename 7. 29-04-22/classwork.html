@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>class work</title>
+    </head>
+    <body>
+        <div id="div1">
+
+        </div>
+        <script>
+            var table=document.getElementById("div1");
+            for(let i=1;i<=10;i++){
+                table.innerHTML+="19 X"+i+"="+19*i+"<br>"
+            }
+             const table= [1,2,3,4,5,6,7,8,9,10];
+             let tableText=""
+             table.forEach(tableFunc)
+             function tableFunc(value,index){
+                 tableText+=`19 x${index+1}=${ 19*table[index]} <br>`
+                
+             }
+             document.getElementById("div1").innerHTML=tableText
+            // console.log(txt)
+        </script>
+    </body>
+</html>

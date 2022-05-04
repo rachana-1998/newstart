@@ -4,6 +4,7 @@
         <title>string function</title>
     </head>
     <body>
+        <div id="div1"></div>
          <script>
              const answer1="first string";
              const answer2='second string'
@@ -50,6 +51,8 @@
      console.log(part)
          let text2="the \" student\" of acciojob \'batch\' 1\\2"
 console.log(text2.slice(3,15))
+
+
 let reptext="please be here here"
 let newtext2=reptext.replace("here","in delhi")
 console.log(newtext2);
@@ -57,6 +60,8 @@ let newtext3=reptext.replace(/here/g,"in delhi")
 let newtext4=" please be here HERE"
  newtext4=reptext.replace(/here/gi,"in delhi")
 console.log(newtext3)
+
+
 let text3=" ".concat(" ","Hey")
 console.log(text3)
 let text6="whats up".concat(" dgfrjjl","Hey")
@@ -73,6 +78,27 @@ console.log(nameArr)
 console.log(charArr)
 let wholeArr=namestatement.split()
 console.log(wholeArr)
+ let tempLiteral=` this is a template Literal`
+ let tempLiteral2=` this "is" a 'template' Literal`
+ let tempLiteral3=` this is a template Lite
+hsdjdhiu 
+
+ ral`
+ console.log(tempLiteral3);
+ const myfirstname="rachana"
+ const lastname="pandey"
+ console.log("my name is"+(myfirstname)+""+(lastname))
+ console.log(`my name is ${myfirstname} ${lastname}`)
+
+
+ let price =10
+ let VAT=0.25
+ let total=`Total: ${ (price *(1+VAT)).toFixed(2)}`
+ console.log(total)
+ const heading="this is heading"
+ const  content="this is content"
+ document.getElementById("div1").innerHTML=`<h2>${heading}</h2>
+ <p>${content}</p>`
          </script>
     </body>
 </html>
