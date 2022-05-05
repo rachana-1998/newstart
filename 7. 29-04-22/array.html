@@ -88,6 +88,75 @@ const arr1=["a","b"]
 const arr2=["z","y"]
 const arr12=arr1.concat(arr2,arr1,arr1)
 console.log(arr12)
+
+
+
+const eg=["Banana","Orange","papaya","Kiwi"]
+eg.splice(2,0,"lemon","mango")
+console.log(eg)
+eg.splice(3,2)
+console.log(eg)
+
+const eg2=["Banana","Orange","Apple","Mango"]
+console.log(eg2)
+const neweg=eg2.slice(1,3)// start from 1st index
+console.log(neweg)
+
+const num=[40,100,1,5,25,10];
+num.sort()
+console.log(num)
+
+console.log(num.sort(function(a,b){
+    // if you wanna have numeric ascending order sorting
+    return a-b;
+}))
+
+console.log(num.sort(mysortFunc))
+function mysortFunc(a,b){
+// descending order numeric sorting
+return b-a;
+}
+
+function myarrmax(arr){
+    return Math.max.apply(null,arr);
+}
+console.log(myarrmax(num))
+function myarrmin(arr){
+    return Math.min.apply(null,arr);
+}
+console.log(myarrmin(num))
+const carsArrOfObj=[
+    {
+        type:"volvo",
+        year:2016,
+    },
+    {
+        type: "saab",
+        year:2017,
+
+    },
+    {
+        type:"BMW",
+        year:2010,
+    }
+
+];
+const newarr=carsArrOfObj.sort(function(a,b){
+    return   a.year-b.year;
+})
+console.log(newarr)
+const number1=[45, 4,9,16,25]
+const number2=number1.map(mul)
+
+function mul(value,index,array){
+    return value*2;
+}
+console.log(number2)
+const over18=number1.filter(filterFunc)
+function filterFunc(value,index,array){
+    return value>18
+}
+console.log(over18)
 </script>
 
     </body>

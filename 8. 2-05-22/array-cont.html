@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+    </head>
+    <body>
+        <script>
+            function splits(array){
+                const odd=[],even=[];
+ array.forEach(function(value,index){
+  if(index%2){
+      odd.push(value)
+      // index is odd
+  } else{
+      even.push(value)
+  }
+ }
+ )
+  console.log(odd,even)
+            }
+            const arr=[2,4,5,"rd",7]
+            splits(arr)
+
+const number=[4,45,9,16,25]
+
+
+let sum=number.reduce(myFunction)
+
+
+function myFunction(total,value,index,array){
+    // total=total+value
+    return total+value;
+}
+document.write(sum);
+ 
+
+let areAllover18=number.every(function(value){
+    return value>18;
+})
+console.log(areAllover18)
+
+let sumOver18=number.some(function(value){
+    return value>18;
+})
+console.log(sumOver18)
+// chack if all array values pass a test
+
+const fruit=["Apple","Orange", "Apple", "Mango"]
+let indexofMango=fruit.indexOf("Mango")
+let indexofApple=fruit.indexOf("Apple")
+let lastindexofApple=fruit.lastIndexOf("Apple")
+let indexofkiwi=fruit.indexOf("kiwi")
+console.log(indexofMango,indexofApple,lastindexofApple,indexofkiwi)
+
+let first=fruit.find(function(value){
+    return value.length>5
+})
+console.log(first)
+
+console.log(fruit.includes("Mango"))
+        </script>
+    </body>
+</html>
