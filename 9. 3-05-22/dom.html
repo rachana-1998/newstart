@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my title</title>
+</head>
+<body>
+    <a href="http://google.com" id="anchor">my link</a>
+    <h1 id="heading">
+        My heading
+    </h1>
+    <script>
+        // document.getElementById(id)
+        // document.getElementById(classname)// multiple elements
+        // document.getElementById(name)// para,div=>p,div,a
+
+    // Element.innerHTML=new Html content 
+   //  element.attribute=new value
+//element.style.property=new style 
+// element.setAttribute(attribute,value)   
+document.getElementById("anchor").setAttribute("href","http://acciojob.com")
+console.log(document.getElementById("anchor").href)
+ document.getElementById("heading").style.color="green"
+
+ const element = document.createElement("div")
+ element.innerHTML="hey there"
+ document.getElementById("heading").appendChild(element)
+
+ element.innerHTML="Normal div"
+ document.body.appendChild(element)
+ // document.creatElement(element)
+ // document.appendChild(element)
+ // document.removeChild(element)
+
+</script>   
+</body>
+</html>
