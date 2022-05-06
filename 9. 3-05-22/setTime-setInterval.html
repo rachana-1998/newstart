@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            setTimeout-seteInterval
+        </title>
+    </head>
+    <body>
+        <p class="" id="demo"></p>
+        <script>
+            function mygreeting(){
+                console.log("hey,good evening")
+            }
+
+
+           function mystopfunction(){
+          clearTimeout(myTimeout)
+           }
+
+           //mystopfunction()
+           // mygreeting()
+            setTimeout(mygreeting,5000)
+          //  setTimeout(()=>{console.log("this will run after 3sec")},300)
+        
+
+
+          let i=0;
+        //   function counter(){
+        //       i++;
+             
+        //      // setTimeout(counter,1000)
+        //       console.log(i)
+        //       const timeout=setTimeout(counter,1000)
+        //       if(i===5){
+        //           clearTimeout(timeout)
+        //       }
+        //   }
+         // console.log("2")
+      //   setTimeout(counter,1000)
+         // counter()
+          // how can i make number one come after 1 second
+           // console.log("immediate")
+
+
+           function displayHello(){
+               document.getElementById("demo").innerHTML+="Hello"
+               clearInterval(interval)
+           }
+          const interval= setInterval(displayHello,2000)
+
+          let j=0;
+          function counter2(){
+              j++;
+              console.log(j)
+          }
+          setInterval(counter2,1000)
+
+        </script>
+    </body>
+</html>
