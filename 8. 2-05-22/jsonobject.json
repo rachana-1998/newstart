@@ -1,0 +1,14 @@
+{
+    "firstName":"rachana",
+    "lastName":"pandey" ,
+    "age":22,
+    "Address":{
+        "street":"1",
+        "locality":" ",
+        "city":""
+    },
+    "phone": {
+       "phone": "8840188012",
+       "phone1": "9935325097"
+    }
+}

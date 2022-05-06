@@ -1,3 +1,8 @@
+const obj=require("./jsonObject.json")
+console.log(obj.address)
+
+
+
 console.log(Math.random())
 // return a random number between[0,1)
 
