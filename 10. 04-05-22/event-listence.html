@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Events Listener</title>
+</head>
+<body>
+    <p id="demo"> empty para</p>
+    <button id="showDate">showDate</button>
+    <button id="stopupdating">stop updating date</button>
+    <script>
+const btn=document.getElementById("showDate")
+const myCustmoFunc=()=>{
+
+document.getElementById("demo").innerHTML=`Current Date time is ${new Date()}`
+}
+btn.addEventListener("click",myCustmoFunc)
+
+setInterval(myCustmoFunc,1000)
+const stopbtn=document.getElementById("stopupdating")
+stopbtn.addElementListener("click",()=>{
+    btn.removeEventListener("click",myCustmoFunc)
+})
+
+    </script>
+</body>
+</html>

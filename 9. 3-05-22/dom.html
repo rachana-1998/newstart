@@ -11,6 +11,11 @@
     <h1 id="heading">
         My heading
     </h1>
+    <p id="intro" class="intro">1</p>
+    <p class="intro">2</p>
+    <p class="intro">3</p>
+
+    
     <script>
         // document.getElementById(id)
         // document.getElementById(classname)// multiple elements
@@ -33,7 +38,11 @@ console.log(document.getElementById("anchor").href)
  // document.creatElement(element)
  // document.appendChild(element)
  // document.removeChild(element)
+ const paraElements= document.getElementsByTagName("p")
+ const parawithintroclass=document.querySelectorAll("p.intro")
+ const parawithintroID=document.querySelectorAll("p#intro")
 
+console.log(parawithintroID)
 </script>   
 </body>
 </html>
